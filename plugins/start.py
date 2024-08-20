@@ -23,7 +23,7 @@ async def Handle_StartMsg(bot:Client, msg:Message):
         botusername = await bot.get_me()
         btn = [
             [InlineKeyboardButton(text='⚡ BOT PM', url=f'https://t.me/{botusername.username}')],
-            [InlineKeyboardButton(text='💻 Dᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/Snowball_Official')]
+            [InlineKeyboardButton(text='💻 Channel', url='https://t.me/Anime_Madness')]
         ]
 
         await Snowdev.edit(text=Txt.GROUP_START_MSG.format(msg.from_user.mention), reply_markup=InlineKeyboardMarkup(btn))
@@ -31,7 +31,7 @@ async def Handle_StartMsg(bot:Client, msg:Message):
     else:
         btn = [
             [InlineKeyboardButton(text='❗ Hᴇʟᴘ', callback_data='help'), InlineKeyboardButton(text='🌨️ Aʙᴏᴜᴛ', callback_data='about')],
-            [InlineKeyboardButton(text='📢 Uᴘᴅᴀᴛᴇs', url='https://t.me/AIORFT'), InlineKeyboardButton(text='💻 Dᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/Snowball_Official')]
+            [InlineKeyboardButton(text='📢 Updates', url='https://t.me/Madness_Association'), InlineKeyboardButton(text='💻 Channel', url='https://t.me/Anime_Madness')]
         ]
 
         if Config.START_PIC:
@@ -52,7 +52,7 @@ async def Files_Option(bot:Client, message:Message):
         botusername = await bot.get_me()
         btn = [
             [InlineKeyboardButton(text='⚡ BOT PM', url=f'https://t.me/{botusername.username}')],
-            [InlineKeyboardButton(text='💻 Dᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/Snowball_Official')]
+            [InlineKeyboardButton(text='💻 Channel', url='https://t.me/Anime_Madness')]
         ]
 
         return await SnowDev.edit(text=Txt.GROUP_START_MSG.format(message.from_user.mention), reply_markup=InlineKeyboardMarkup(btn))
